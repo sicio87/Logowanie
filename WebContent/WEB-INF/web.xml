@@ -7,13 +7,37 @@
         <servlet-name>login</servlet-name>
         <servlet-class>eu.karols.servlets.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <display-name>Article</display-name>
+        <servlet-name>Article</servlet-name>
+        <servlet-class>eu.karols.servlets.ArticleControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>Success</display-name>
+        <servlet-name>Success</servlet-name>
+        <servlet-class>eu.karols.servlets.Success</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>login</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Article</servlet-name>
+        <url-pattern>/createArticle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Success</servlet-name>
+        <url-pattern>/Success</url-pattern>
+    </servlet-mapping>
+
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
+
+
+
+
+
